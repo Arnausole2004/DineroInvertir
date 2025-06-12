@@ -1,97 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Guía para empezar a invertir con IA | DineroIA</title>
+  <title>Cómo empezar a invertir: guía básica para principiantes</title>
+
+  <!-- Google Fonts + Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/app.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">Dinero<span>IA</span></a>
-      <nav class="nav" aria-label="Navegación principal">
+  <!-- TÍTULO FUERA DEL MENU -->
+  <header class="tech-header">
+    <h1>
+      Cómo empezar a invertir: <br />
+      guía básica para principiantes
+    </h1>
+    <canvas id="network"></canvas>
+  </header>
+
+  <!-- NAVBAR UNIFICADA -->
+  <header class="navbar horizontal">
+    <div class="nav-container">
+      <nav class="nav-links horizontal">
         <a href="index.html">Inicio</a>
-        <a href="#funciona">¿Qué es invertir con IA?</a>
-        <a href="#pasos">Pasos para comenzar</a>
-        <a href="#consejos">Consejos</a>
-        <a href="#accion">Empieza ya</a>
+        <a href="freelancer.html">ChatGPT Freelancer</a>
+        <a href="creaciondecontenidoia.html">Creación de Contenido IA</a>
+        <a href="microtareasautomaticas.html">Microtareas Automáticas</a>
+        <a href="botsdetrading.html">Bots de Trading</a>
+        <a href="cursosyconsultorias.html">Cursos y Consultorías IA</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero guia-hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Guía para <span class="highlight-green">empezar a invertir con IA</span></h1>
-        <p class="hero-subtitle">Descubre cómo la inteligencia artificial puede ayudarte a tomar mejores decisiones financieras y hacer crecer tu dinero de forma sencilla.</p>
-        <a href="#accion" class="btn-primary">
-          <i class="fa-solid fa-rocket"></i> ¡Quiero empezar!
-        </a>
-      </div>
-      <div class="hero-image">
-        <img src="assets/inversion-ia.webp" alt="Invertir con inteligencia artificial" />
-      </div>
+  <section class="intro-section" style="max-width: 900px; margin: 2rem auto; padding: 0 1rem; font-family: 'Poppins', sans-serif; color: #333;">
+    <h2 style="font-size: 1.5rem; white-space: nowrap; font-weight: 600; color: #004080;">
+      Empieza a invertir de forma sencilla y segura
+    </h2>
+
+    <p>
+      Invertir puede parecer complicado al principio, pero con la información adecuada y un plan básico, cualquier persona puede comenzar a hacerlo de manera efectiva.
+    </p>
+    <p>
+      Esta guía te ayudará a entender los conceptos básicos, los tipos de inversión más accesibles y cómo dar tus primeros pasos sin riesgos innecesarios.
+    </p>
+    <p>
+      No necesitas grandes sumas de dinero ni experiencia previa; lo importante es informarte, planificar y actuar con confianza.
+    </p>
+
+    <div style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <img src="assets/inversion-basica.webp" alt="Invertir con inteligencia" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
     </div>
   </section>
 
-  <!-- ¿Qué es? -->
-  <section id="funciona" class="info-section">
-    <div class="container">
-      <h2>¿Qué es invertir con IA?</h2>
-      <p>Invertir con inteligencia artificial implica utilizar algoritmos y modelos predictivos para analizar el mercado financiero y tomar decisiones más informadas y automatizadas.</p>
-      <p>Estas herramientas ayudan a reducir riesgos y aprovechar oportunidades, incluso si no tienes experiencia previa en finanzas.</p>
+  <section class="intro-continue" style="max-width: 900px; margin: 2rem auto; padding: 0 1rem; font-family: 'Poppins', sans-serif; color: #333;">
+    <h2 style="font-size: 1.5rem; white-space: nowrap; font-weight: 600; color: #004080; margin-bottom: 1rem; text-align: center;">
+      Pasos básicos para comenzar a invertir hoy
+    </h2>
+
+    <ul style="list-style-type: disc; padding-left: 1.2rem;">
+      <li><strong>Define tu objetivo:</strong> ¿Quieres ahorrar para el futuro, generar ingresos extra o proteger tu dinero?</li>
+      <li><strong>Educa sobre inversiones:</strong> Aprende términos básicos y tipos de inversiones (acciones, fondos, bonos, criptomonedas).</li>
+      <li><strong>Elige una plataforma confiable:</strong> Busca brokers regulados y con buenas reseñas para comenzar.</li>
+      <li><strong>Empieza con poco dinero:</strong> Invierte montos pequeños para familiarizarte con el proceso y reducir riesgos.</li>
+      <li><strong>Diversifica tu inversión:</strong> No pongas todo en un solo activo, reparte para minimizar pérdidas.</li>
+      <li><strong>Haz seguimiento:</strong> Revisa periódicamente tus inversiones y ajusta según el mercado y tus objetivos.</li>
+    </ul>
+
+    <p>
+      Recuerda que invertir es un proceso continuo de aprendizaje y paciencia. La constancia y la información son tus mejores aliados.
+    </p>
+  </section>
+
+  <section id="contacto" class="contacto-simple" style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
+    <div class="contacto-box">
+      <h2>Contacto</h2>
+      <form action="https://formsubmit.co/erasmusroma20242025@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </section>
 
-  <!-- Pasos -->
-  <section id="pasos" class="info-section">
-    <div class="container">
-      <h2>Pasos para comenzar</h2>
-      <ol class="lista-ordenada">
-        <li>Infórmate sobre plataformas y apps que usan IA para inversiones.</li>
-        <li>Define un presupuesto claro y objetivos realistas.</li>
-        <li>Aprende a interpretar datos y señales que la IA proporciona.</li>
-        <li>Prueba con cuentas demo o pequeñas inversiones al principio.</li>
-        <li>Monitorea constantemente y ajusta según los resultados.</li>
-      </ol>
-    </div>
-  </section>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 
-  <!-- Consejos -->
-  <section id="consejos" class="info-section">
-    <div class="container">
-      <h2>Consejos para maximizar tus resultados</h2>
-      <ul class="lista">
-        <li>Evita invertir dinero que no puedas perder.</li>
-        <li>Combina análisis humano con recomendaciones de IA.</li>
-        <li>Mantente actualizado sobre novedades financieras y tecnológicas.</li>
-        <li>Utiliza diversas herramientas para diversificar tus inversiones.</li>
-        <li>Paciencia y constancia son claves para el éxito.</li>
-      </ul>
-    </div>
-  </section>
+  <script>
+    const canvas = document.getElementById('network');
+    const ctx = canvas.getContext('2d');
 
-  <!-- Acción -->
-  <section id="accion" class="info-section">
-    <div class="container text-center">
-      <a href="https://www.investopedia.com/terms/a/artificial-intelligence-ai.asp" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
-        🚀 Aprende más sobre IA en inversiones
-      </a>
-    </div>
-  </section>
+    let points = [];
+    let width, height;
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Dinero Apps | Proyecto educativo</p>
-  </footer>
+    function resizeCanvas() {
+      width = canvas.width = canvas.clientWidth;
+      height = canvas.height = canvas.clientHeight;
+    }
 
+    function initPoints() {
+      points = [];
+      for (let i = 0; i < 60; i++) {
+        points.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5
+        });
+      }
+    }
+
+    function distance(p1, p2) {
+      return Math.hypot(p1.x - p2.x, p1.y - p2.y);
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < points.length; i++) {
+        for (let j = i + 1; j < points.length; j++) {
+          const dist = distance(points[i], points[j]);
+          if (dist < 120) {
+            ctx.strokeStyle = `rgba(0, 255, 0, ${1 - dist / 120})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(points[j].x, points[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      points.forEach((p) => {
+        ctx.fillStyle = 'lime';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      points.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+      });
+
+      requestAnimationFrame(draw);
+    }
+
+    function start() {
+      resizeCanvas();
+      initPoints();
+      draw();
+    }
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      initPoints();
+    });
+
+    start();
+  </script>
 </body>
 </html>
-
-
