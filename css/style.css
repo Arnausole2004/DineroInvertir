@@ -213,7 +213,7 @@ a {
 
 /* ===== CONTACTO ===== */
 .contacto-simple {
-  background-color: var(--verde);
+  background-color: #ff7f50;
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
