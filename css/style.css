@@ -213,7 +213,7 @@ a {
 
 /* ===== CONTACTO ===== */
 .contacto-simple {
-  background-color: #ff7f50;
+  background-color: #ff7f50; /* fondo naranja */
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
@@ -227,13 +227,13 @@ a {
   padding: 2rem;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(255, 127, 80, 0.3); /* sombra naranja */
 }
 
 .contacto-box h2 {
   text-align: center;
   font-size: 2rem;
-  color: #145214;
+  color: #ff7f50; /* título naranja */
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
@@ -242,23 +242,24 @@ a {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  color: #cc6b42; /* un tono naranja más oscuro para etiquetas */
 }
 
 .contacto-box input,
 .contacto-box textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 2px solid #cce7cc;
+  border: 2px solid #ffbc9a; /* borde naranja suave */
   border-radius: 8px;
   font-size: 1rem;
   margin-bottom: 1.2rem;
-  background-color: #f9fff9;
+  background-color: #fff5f0; /* fondo muy claro naranja */
   transition: border-color 0.2s ease;
 }
 
 .contacto-box input:focus,
 .contacto-box textarea:focus {
-  border-color: #42bf6e;
+  border-color: #ff7f50; /* borde naranja fuerte al foco */
   outline: none;
   background-color: #ffffff;
 }
@@ -266,7 +267,7 @@ a {
 .contacto-box button {
   width: 100%;
   padding: 1rem;
-  background-color: #28a745;
+  background-color: #ff7f50; /* botón naranja */
   color: #fff;
   font-size: 1.1rem;
   border: none;
@@ -277,8 +278,9 @@ a {
 }
 
 .contacto-box button:hover {
-  background-color: #218838;
+  background-color: #e06a3c; /* naranja un poco más oscuro al hover */
 }
+
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
