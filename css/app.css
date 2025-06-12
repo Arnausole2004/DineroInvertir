@@ -1,1 +1,49 @@
+.financial-step {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(255, 127, 80, 0.25);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a3721;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.step-title {
+  color: #ff7f50;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.step-intro {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  color: #5d4732;
+}
+
+.step-content h3 {
+  color: #e06b42;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid #ff7f50;
+  padding-left: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.step-content p {
+  font-size: 1rem;
+  color: #5d4732;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
 
