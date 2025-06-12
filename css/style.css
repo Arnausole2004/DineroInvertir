@@ -213,19 +213,21 @@ a {
 
 /* ===== CONTACTO ===== */
 .contact-form {
-  max-width: 360px;
+  width: 100%;
+  max-width: 600px; /* limita el ancho máximo */
   margin: 1rem auto;
-  padding: 1.5rem 2rem;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  background-color: #ffd8b1; /* naranja pastel */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.2);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #5a3e1b; /* marrón oscuro para contraste */
+  box-sizing: border-box;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -233,40 +235,44 @@ a {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.5rem 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.45rem 0.7rem;
+  margin-bottom: 0.8rem;
+  border: 1.5px solid #ffa94d; /* naranja más oscuro */
+  border-radius: 6px;
   font-size: 0.9rem;
   font-family: inherit;
   transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #0078d7;
+  border-color: #ff7f11; /* naranja fuerte al enfocar */
   outline: none;
+  box-shadow: 0 0 5px #ff7f11aa;
 }
 
 .contact-form textarea {
   resize: vertical;
-  min-height: 80px;
+  min-height: 70px;
 }
 
 .contact-form button {
-  background-color: #0078d7;
+  width: 100%;
+  background-color: #ff7f11; /* naranja fuerte */
   color: white;
   border: none;
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 0;
   font-size: 1rem;
-  font-weight: 600;
-  border-radius: 5px;
+  font-weight: 700;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .contact-form button:hover {
-  background-color: #005ea1;
+  background-color: #e76f00; /* naranja un poco más oscuro al pasar */
 }
 
 
