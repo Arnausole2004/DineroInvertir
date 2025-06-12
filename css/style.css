@@ -1,1 +1,194 @@
+/* app.css (añade estas reglas o adapta según tu archivo actual) */
+
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #0f4c3a; /* verde oscuro */
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #5ce07d; /* verde claro */
+}
+
+.nav a {
+  color: #cde6d0;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #5ce07d;
+}
+
+/* Hero */
+.hero.guia-hero {
+  background: linear-gradient(135deg, #5ce07d 0%, #0f4c3a 100%);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0f4c3a;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(92, 224, 125, 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5ce07d;
+  color: #fff;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Sections */
+.info-section {
+  background-color: #fff;
+  padding: 3rem 0;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.info-section h2 {
+  color: #0f4c3a;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.lista, .lista-ordenada {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.lista li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.lista li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #5ce07d;
+  font-weight: bold;
+}
+
+.lista-ordenada {
+  list-style: decimal inside;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.lista-ordenada li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #0f4c3a;
+  color: #cde6d0;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav a {
+    margin-left: 1rem;
+  }
+}
 
