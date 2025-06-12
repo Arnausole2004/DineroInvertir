@@ -212,6 +212,15 @@ a {
 }
 
 /* ===== CONTACTO ===== */
+.contact-title {
+  color: #ff7f50;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 .contact-form {
   width: 100%;
   max-width: 600px; /* limita el ancho máximo */
