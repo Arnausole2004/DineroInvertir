@@ -213,7 +213,7 @@ a {
 
 /* ===== CONTACTO ===== */
 .contacto-simple {
-  background-color: #ff7f50; /* fondo naranja */
+  background-color: #ffb38a; /* fondo naranja */
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
@@ -233,7 +233,7 @@ a {
 .contacto-box h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ff7f50; /* título naranja */
+  color: #ffb38a; /* título naranja */
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
@@ -253,13 +253,13 @@ a {
   border-radius: 8px;
   font-size: 1rem;
   margin-bottom: 1.2rem;
-  background-color: #fff5f0; /* fondo muy claro naranja */
+  background-color: #ffb38a; /* fondo muy claro naranja */
   transition: border-color 0.2s ease;
 }
 
 .contacto-box input:focus,
 .contacto-box textarea:focus {
-  border-color: #ff7f50; /* borde naranja fuerte al foco */
+  border-color: #ffb38a; /* borde naranja fuerte al foco */
   outline: none;
   background-color: #ffffff;
 }
@@ -267,7 +267,7 @@ a {
 .contacto-box button {
   width: 100%;
   padding: 1rem;
-  background-color: #ff7f50; /* botón naranja */
+  background-color: #ffb38a; /* botón naranja */
   color: #fff;
   font-size: 1.1rem;
   border: none;
