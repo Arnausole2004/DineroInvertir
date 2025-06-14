@@ -1,10 +1,8 @@
 :root {
-  --primario: #1a73e8;       /* azul principal para títulos */
-  --verde: #28a745;          /* verde para puntos y enlaces */
-  --gris: #555;              /* gris para textos secundarios */
-  --oscuro: #111;            /* color texto principal */
-  --claro: #f9f9f9;          /* fondo claro de secciones */
-  --radius: 0.75rem;
+  --naranja-pastel: #ffa07a; /* naranja pastel */
+  --blanco: #ffffff;
+  --gris-texto: #444444;
+  --radio: 0.75rem;
 }
 
 /* Reset básico */
@@ -16,10 +14,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--oscuro);
+  color: var(--gris-texto);
   line-height: 1.6;
   background: #fff;
   scroll-behavior: smooth;
+  text-align: justify;
 }
 
 a {
@@ -27,11 +26,17 @@ a {
   color: inherit;
 }
 
+/* TITULOS NARANJA PASTEL */
+h1, h2, h3 {
+  color: var(--naranja-pastel);
+  font-weight: 700;
+}
+
 /* ===== HEADER TECNOLOGICO ===== */
 .tech-header {
   position: relative;
-  background: #ffb38a;
-  color: #fff;
+  background: #ffb38a; /* mantiene fondo naranja */
+  color: var(--blanco);
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
@@ -94,7 +99,7 @@ a {
 }
 
 .nav-links.horizontal a:hover {
-  color: #ff6b6b;
+  color: var(--naranja-pastel);
 }
 
 .nav-links.horizontal a::after {
@@ -104,7 +109,7 @@ a {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #ff6b6b;
+  background-color: var(--naranja-pastel);
   transition: width 0.3s ease;
 }
 
@@ -118,46 +123,50 @@ a {
   min-height: 400px;
   max-width: 900px;
   margin: 3rem auto;
-  text-align: center;
-  color: #222;
-  line-height: 1.6;
+  color: var(--gris-texto);
+  line-height: 1.7;
   font-size: 1rem;
+  background-color: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .intro-section h2 {
-  color: var(--primario);
-  font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .intro-section p {
   margin-bottom: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: justify;
 }
 
 /* ===== PASOS BÁSICOS ===== */
 .intro-continue {
   max-width: 900px;
   margin: 3rem auto 6rem;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
+  background-color: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .intro-continue h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--primario);
   text-align: center;
 }
 
 .intro-continue ul {
   margin-bottom: 2rem;
   list-style: disc inside;
-  color: var(--gris);
+  color: var(--gris-texto);
+  text-align: justify;
 }
 
 .intro-continue ul li {
@@ -168,25 +177,26 @@ a {
 .contacto-simple {
   max-width: 480px;
   margin: 0 auto 4rem;
-  background: var(--claro);
-  border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--blanco);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   padding: 2rem;
 }
 
 .contact-title {
-  color: var(--primario);
   font-weight: 700;
   font-size: 1.7rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--naranja-pastel);
 }
 
 .contact-form label {
   display: block;
   margin-bottom: 0.4rem;
   font-weight: 600;
-  color: var(--gris);
+  color: var(--gris-texto);
+  text-align: left;
 }
 
 .contact-form input,
@@ -195,7 +205,7 @@ a {
   padding: 0.75rem 1rem;
   margin-bottom: 1.3rem;
   border: 1px solid #ddd;
-  border-radius: var(--radius);
+  border-radius: var(--radio);
   font-size: 1rem;
   font-family: inherit;
   resize: vertical;
@@ -204,18 +214,18 @@ a {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--primario);
+  border-color: var(--naranja-pastel);
   outline: none;
-  box-shadow: 0 0 6px var(--primario);
+  box-shadow: 0 0 6px var(--naranja-pastel);
 }
 
 .contact-form button {
-  background-color: var(--primario);
+  background-color: var(--naranja-pastel);
   color: white;
   font-weight: 700;
   padding: 0.85rem 1.6rem;
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radio);
   cursor: pointer;
   width: 100%;
   font-size: 1.1rem;
@@ -223,7 +233,7 @@ a {
 }
 
 .contact-form button:hover {
-  background-color: #145dbf;
+  background-color: #e88c63;
 }
 
 /* ===== RESPONSIVE ===== */
