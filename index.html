@@ -18,22 +18,19 @@
 </head>
 <body>
 
-  <!-- TÍTULO FUERA DEL MENU -->
+  <!-- HEADER PRINCIPAL -->
   <header class="tech-header">
-    <h1>
-      Cómo empezar a invertir: <br />
-      guía básica para principiantes
-    </h1>
+    <h1>Cómo empezar a invertir: <br />guía básica para principiantes</h1>
     <canvas id="network"></canvas>
   </header>
 
-  <!-- NAVBAR UNIFICADA -->
+  <!-- NAVBAR -->
   <header class="navbar horizontal">
     <div class="nav-container">
-      <nav class="nav-links horizontal">
+      <nav class="nav-links horizontal" aria-label="Menú principal">
         <a href="index.html">Inicio</a>
         <a href="objetivos.html">Objetivos Financieros</a>
-        <a href="basicos.html">Principios bàsicos</a>
+        <a href="basicos.html">Principios básicos</a>
         <a href="presupuesto.html">Presupuesto</a>
         <a href="brokers.html">Brokers</a>
         <a href="inversiones.html">Inversiones</a>
@@ -42,64 +39,56 @@
     </div>
   </header>
 
-  <section class="intro-section" style="max-width: 900px; margin: 10rem auto; padding: 0 1rem; font-family: 'Poppins', sans-serif; color: #333;">
-   <h2 style="margin-top: 0.75rem; text-align: center; color: #f28c66; text-transform: uppercase;">
-  Empieza a invertir de forma sencilla y segura
-</h2>
-    <p>
-      Invertir puede parecer complicado al principio, pero con la información adecuada y un plan básico, cualquier persona puede comenzar a hacerlo de manera efectiva.
-    </p>
-    <p>
-      Esta guía te ayudará a entender los conceptos básicos, los tipos de inversión más accesibles y cómo dar tus primeros pasos sin riesgos innecesarios.
-    </p>
-    <p>
-      No necesitas grandes sumas de dinero ni experiencia previa; lo importante es informarte, planificar y actuar con confianza.
-    </p>
+  <!-- SECCIÓN INTRODUCTORIA -->
+  <main style="max-width: 900px; margin: 6rem auto 3rem; padding: 0 1rem; font-family: 'Poppins', sans-serif; color: #333;">
+    <section class="intro-section" aria-label="Introducción a la inversión">
+      <h2>Empieza a invertir de forma sencilla y segura</h2>
+      <p>Invertir puede parecer complicado al principio, pero con la información adecuada y un plan básico, cualquier persona puede comenzar a hacerlo de manera efectiva.</p>
+      <p>Esta guía te ayudará a entender los conceptos básicos, los tipos de inversión más accesibles y cómo dar tus primeros pasos sin riesgos innecesarios.</p>
+      <p>No necesitas grandes sumas de dinero ni experiencia previa; lo importante es informarte, planificar y actuar con confianza.</p>
 
- <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-  <img src="assets/invertir.webp" alt="Invertir con inteligencia"
-       style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 3rem;" />
-</div>
+      <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <img
+          src="assets/invertir.webp"
+          alt="Invertir con inteligencia"
+          style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 3rem;"
+        />
+      </div>
+    </section>
 
-<section class="intro-continue">
-  <h2 style="margin-top: 0.75rem; text-align: center; color: #f28c66; text-transform: uppercase;">
-    PASOS BÁSICOS PARA COMENZAR A INVERTIR HOY
-  </h2>
+    <!-- SECCIÓN DE PASOS BÁSICOS -->
+    <section class="intro-continue" aria-label="Pasos básicos para comenzar a invertir">
+      <h2>PASOS BÁSICOS PARA COMENZAR A INVERTIR HOY</h2>
+      <ul>
+        <li><strong>Define tu objetivo:</strong> ¿Quieres ahorrar para el futuro, generar ingresos extra o proteger tu dinero?</li>
+        <li><strong>Educa sobre inversiones:</strong> Aprende términos básicos y tipos de inversiones (acciones, fondos, bonos, criptomonedas).</li>
+        <li><strong>Elige una plataforma confiable:</strong> Busca brokers regulados y con buenas reseñas para comenzar.</li>
+        <li><strong>Empieza con poco dinero:</strong> Invierte montos pequeños para familiarizarte con el proceso y reducir riesgos.</li>
+        <li><strong>Diversifica tu inversión:</strong> No pongas todo en un solo activo, reparte para minimizar pérdidas.</li>
+        <li><strong>Haz seguimiento:</strong> Revisa periódicamente tus inversiones y ajusta según el mercado y tus objetivos.</li>
+      </ul>
+      <p>Recuerda que invertir es un proceso continuo de aprendizaje y paciencia. La constancia y la información son tus mejores aliados.</p>
+    </section>
 
-  <ul style="list-style-type: disc; padding-left: 1.2rem;">
-    <li><strong>Define tu objetivo:</strong> ¿Quieres ahorrar para el futuro, generar ingresos extra o proteger tu dinero?</li>
-    <li><strong>Educa sobre inversiones:</strong> Aprende términos básicos y tipos de inversiones (acciones, fondos, bonos, criptomonedas).</li>
-    <li><strong>Elige una plataforma confiable:</strong> Busca brokers regulados y con buenas reseñas para comenzar.</li>
-    <li><strong>Empieza con poco dinero:</strong> Invierte montos pequeños para familiarizarte con el proceso y reducir riesgos.</li>
-    <li><strong>Diversifica tu inversión:</strong> No pongas todo en un solo activo, reparte para minimizar pérdidas.</li>
-    <li><strong>Haz seguimiento:</strong> Revisa periódicamente tus inversiones y ajusta según el mercado y tus objetivos.</li>
-  </ul>
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contacto" class="contacto-simple" aria-label="Formulario de contacto" style="margin-top: 3rem;">
+      <div class="contacto-box">
+        <h2 class="contact-title">Contacto</h2>
+        <form class="contact-form" action="/tu-endpoint" method="POST">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
 
-  <p>
-    Recuerda que invertir es un proceso continuo de aprendizaje y paciencia. La constancia y la información son tus mejores aliados.
-  </p>
-</section>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
 
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
 
-  <section id="contacto" class="contacto-simple" style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
-    <div class="contacto-box">
-      <h2 class="contact-title">Contacto</h2>
-    <form class="contact-form" action="/tu-endpoint" method="POST">
-  <label for="name">Nombre</label>
-  <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-
-  <label for="email">Correo electrónico</label>
-  <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-
-  <label for="message">Mensaje</label>
-  <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
-
-  <button type="submit">Enviar</button>
-</form>
-
-
-    </div>
-  </section>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
@@ -151,7 +140,7 @@
       }
 
       points.forEach((p) => {
-       ctx.fillStyle = 'black';
+        ctx.fillStyle = 'black';
         ctx.beginPath();
         ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
         ctx.fill();
