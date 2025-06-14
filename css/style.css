@@ -119,8 +119,6 @@ a {
   padding-bottom: 3rem;
   padding-left: 1.5rem;
   min-height: 400px; /* asegura altura mínima */
-
-  /* mantiene el resto igual */
   max-width: 900px;
   margin: 3rem auto;
   text-align: center;
@@ -130,6 +128,19 @@ a {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+}
+.intro-section {
+  padding: 3rem 1.5rem; /* espacio interno en el box */
+}
+
+.intro-section h2 {
+  margin-top: 2rem; /* suele no necesitar margen arriba */
+  margin-bottom: 1.4rem; /* espacio debajo del título */
+}
+
+.intro-section p {
+  margin-top: 1.4rem; /* espacio arriba del párrafo */
+  margin-bottom: 2rem;
 }
 
 }
