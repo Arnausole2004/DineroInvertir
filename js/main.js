@@ -14,6 +14,19 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+<script>
+  // Alternar visibilidad del menú
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("hidden");
+  });
+
+  // Cerrar el menú cuando se hace clic en un enlace
+  document.querySelectorAll("#menu a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.getElementById("menu").classList.add("hidden");
+    });
+  });
+</script>
 
 }
 
