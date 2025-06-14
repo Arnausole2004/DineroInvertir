@@ -114,16 +114,22 @@ a {
 
 /* ===== INTRODUCCIÓN ===== */
 .intro-section {
-  padding: 4rem 1.5rem 3rem 1.5rem; /* más espacio arriba */
+  padding-top: 5rem; /* aumenta el espacio arriba */
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  /* mantiene el resto igual */
   max-width: 900px;
   margin: 3rem auto;
   text-align: center;
   color: #222;
   line-height: 1.7;
-  background: var(--claro); /* fondo blanco o claro */
+  background: var(--claro);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+}
+
 }
 
 
