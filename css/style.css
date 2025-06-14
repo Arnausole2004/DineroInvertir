@@ -7,11 +7,11 @@
   --radius: 0.75rem;
 }
 
-/* Reseteo básico */
+/* Reset básico */
 * {
   box-sizing: border-box;
-  margin:0
-  padding:0
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -52,7 +52,7 @@ a {
   max-width: 800px;
 }
 
-/* Canvas se queda como fondo */
+/* Canvas como fondo */
 .tech-header canvas#network {
   position: absolute;
   inset: 0;
@@ -114,224 +114,131 @@ a {
 
 /* ===== INTRODUCCIÓN ===== */
 .intro-section {
-  padding-top: 6rem;
-  padding-right: 1.5rem;
-  padding-bottom: 3rem;
-  padding-left: 1.5rem;
-  min-height: 400px; /* asegura altura mínima */
+  padding: 3rem 1.5rem;
+  min-height: 400px;
   max-width: 900px;
   margin: 3rem auto;
   text-align: center;
   color: #222;
-  line-height: 1.7;
-  background: var(--claro);
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-.intro-section {
-  padding: 3rem 1.5rem; /* espacio interno en el box */
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .intro-section h2 {
-  margin-top: 2rem; /* suele no necesitar margen arriba */
-  margin-bottom: 1.4rem; /* espacio debajo del título */
-}
-
-.intro-section p {
-  margin-top: 1.4rem; /* espacio arriba del párrafo */
-  margin-bottom: 2rem;
-}
-
-}
-
-
-.intro-section:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.intro-section h2 {
-  font-weight: 600;
+  color: var(--primario);
   font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 1.4rem;
-  color: #ff7f50;
-  text-shadow: 1px 1px 2px rgba(26, 115, 232, 0.3);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .intro-section p {
-  font-weight: 400;
-  font-size: 1.1rem;
-  margin-top: 1.4rem; 
-  margin-bottom: 1.4rem;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
 }
 
-.intro-section img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(26, 115, 232, 0.25);
-  transition: transform 0.3s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro-section img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== INTRO CONTINUACIÓN ===== */
+/* ===== PASOS BÁSICOS ===== */
 .intro-continue {
-  background: var(--claro);
-  padding: 3rem 1.5rem;
-  border-radius: 16px;
   max-width: 900px;
-  margin: 3rem auto 2rem auto;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  color: #222;
-  font-family: 'Poppins', sans-serif;
-  transition: all 0.3s ease-in-out;
+  margin: 3rem auto 6rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .intro-continue h2 {
-   font-weight: 600;
-  font-size: 2rem;
-  color: #ff7f50;
+  font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--primario);
   text-align: center;
-  font-weight: 700;
 }
 
 .intro-continue ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-  text-align: justify;
+  margin-bottom: 2rem;
+  list-style: disc inside;
+  color: var(--gris);
 }
 
-.intro-continue li {
+.intro-continue ul li {
   margin-bottom: 0.75rem;
-  font-size: 1.05rem;
-  line-height: 1.6;
 }
 
-.intro-continue strong {
-  font-weight: 600;
+/* ===== CONTACTO SIMPLE ===== */
+.contacto-simple {
+  max-width: 480px;
+  margin: 0 auto 4rem;
+  background: var(--claro);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
-.intro-continue p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-/* ===== CONTACTO ===== */
 .contact-title {
-  color: #ff7f50;
+  color: var(--primario);
   font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.contact-form {
-  width: 100%;
-  max-width: 600px; /* limita el ancho máximo */
-  margin: 1rem auto;
-  padding: 1rem 1.5rem;
-  background-color: #ffd8b1; /* naranja pastel */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.2);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #5a3e1b; /* marrón oscuro para contraste */
-  box-sizing: border-box;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
   font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--gris);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.45rem 0.7rem;
-  margin-bottom: 0.8rem;
-  border: 1.5px solid #ffa94d; /* naranja más oscuro */
-  border-radius: 6px;
-  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 1rem;
   font-family: inherit;
+  resize: vertical;
   transition: border-color 0.3s ease;
-  box-sizing: border-box;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #ff7f11; /* naranja fuerte al enfocar */
+  border-color: var(--primario);
   outline: none;
-  box-shadow: 0 0 5px #ff7f11aa;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 70px;
+  box-shadow: 0 0 6px var(--primario);
 }
 
 .contact-form button {
-  width: 100%;
-  background-color: #ff7f11; /* naranja fuerte */
+  background-color: var(--primario);
   color: white;
-  border: none;
-  padding: 0.6rem 0;
-  font-size: 1rem;
   font-weight: 700;
-  border-radius: 8px;
+  padding: 0.85rem 1.6rem;
+  border: none;
+  border-radius: var(--radius);
   cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease;
-  box-sizing: border-box;
 }
 
 .contact-form button:hover {
-  background-color: #e76f00; /* naranja un poco más oscuro al pasar */
+  background-color: #145dbf;
 }
 
-
 /* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-  .intro-section,
-  .intro-continue {
-    padding: 2rem 1rem;
-    margin: 2rem 0.5rem;
+@media (max-width: 768px) {
+  .nav-links.horizontal {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
-  .intro-section h2 {
+  .tech-header h1 {
     font-size: 1.8rem;
   }
 
-  .intro-section p,
-  .intro-continue p,
-  .intro-continue li {
-    font-size: 1rem;
-  }
-
-  .contacto-box {
-    padding: 1.5rem;
-  }
-
-  .contacto-box h2 {
+  .intro-section h2,
+  .intro-continue h2 {
     font-size: 1.6rem;
   }
 }
-
