@@ -114,7 +114,10 @@ a {
 
 /* ===== INTRODUCCIÓN ===== */
 .intro-section {
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  /* arriba derecha abajo izquierda */
+}
+
   max-width: 900px;
   margin: 3rem auto;
   text-align: center;
