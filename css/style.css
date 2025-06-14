@@ -10,8 +10,8 @@
 /* Reseteo básico */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin-top: 1.4rem; 
+  margin-bottom: 1.4rem;
 }
 
 body {
