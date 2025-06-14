@@ -114,10 +114,12 @@ a {
 
 /* ===== INTRODUCCIÓN ===== */
 .intro-section {
-  padding-top: 5rem; /* aumenta el espacio arriba */
+  padding-top: 6rem;
   padding-right: 1.5rem;
   padding-bottom: 3rem;
   padding-left: 1.5rem;
+  min-height: 400px; /* asegura altura mínima */
+
   /* mantiene el resto igual */
   max-width: 900px;
   margin: 3rem auto;
